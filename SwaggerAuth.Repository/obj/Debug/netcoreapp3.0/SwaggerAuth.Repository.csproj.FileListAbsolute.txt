@@ -1,0 +1,13 @@
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.deps.json
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.pdb
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Contracts.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Contracts.pdb
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.csprojAssemblyReference.cache
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.AssemblyInfoInputs.cache
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.AssemblyInfo.cs
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.csproj.CopyComplete
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.pdb

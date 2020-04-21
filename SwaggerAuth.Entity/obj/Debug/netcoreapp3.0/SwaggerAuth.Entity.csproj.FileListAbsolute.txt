@@ -1,0 +1,10 @@
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.deps.json
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.runtimeconfig.json
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.runtimeconfig.dev.json
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.csprojAssemblyReference.cache
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.AssemblyInfoInputs.cache
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.AssemblyInfo.cs
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
