@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj": {}
+    "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj": {}
   },
   "projects": {
-    "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj": {
+    "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
+        "projectUniqueName": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
         "projectName": "SwaggerAuth.Contracts",
-        "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
+        "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
         "packagesPath": "C:\\Users\\Borse Nitin\\.nuget\\packages\\",
-        "outputPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\obj\\",
+        "outputPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
-                "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
+              "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
+                "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
+    "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj",
+        "projectUniqueName": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj",
         "projectName": "SwaggerAuth.Entity",
-        "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj",
+        "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj",
         "packagesPath": "C:\\Users\\Borse Nitin\\.nuget\\packages\\",
-        "outputPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\obj\\",
+        "outputPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -100,6 +100,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Auth0.ManagementApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.3, )"
@@ -123,6 +127,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1, )"
             },
             "Swashbuckle": {
               "target": "Package",
@@ -148,14 +156,14 @@
         }
       }
     },
-    "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj": {
+    "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj",
+        "projectUniqueName": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj",
         "projectName": "SwaggerAuth.Repository",
-        "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj",
+        "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Repository\\SwaggerAuth.Repository.csproj",
         "packagesPath": "C:\\Users\\Borse Nitin\\.nuget\\packages\\",
-        "outputPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Repository\\obj\\",
+        "outputPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -174,11 +182,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj": {
-                "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj"
+              "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj": {
+                "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj"
               },
-              "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
-                "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
+              "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
+                "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
               }
             }
           }

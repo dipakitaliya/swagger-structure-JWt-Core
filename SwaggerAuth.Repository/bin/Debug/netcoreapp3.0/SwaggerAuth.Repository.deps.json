@@ -17,10 +17,32 @@
           "SwaggerAuth.Repository.dll": {}
         }
       },
+      "Auth0.Core/7.0.5": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.5.0"
+          }
+        }
+      },
+      "Auth0.ManagementApi/7.0.5": {
+        "dependencies": {
+          "Auth0.Core": "7.0.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.5.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/4.0.20710": {
         "dependencies": {
           "Microsoft.Net.Http": "2.0.20710",
-          "Newtonsoft.Json": "7.0.1"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/net40/System.Net.Http.Formatting.dll": {
@@ -423,11 +445,19 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.1.18622"
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "RestSharp/106.10.1": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.0.0.0",
+            "fileVersion": "106.10.1.0"
           }
         }
       },
@@ -523,7 +553,7 @@
       "Swashbuckle.Core/5.6.0": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Core": "4.0.20710",
-          "Newtonsoft.Json": "7.0.1"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/net40/Swashbuckle.Core.dll": {
@@ -1386,9 +1416,11 @@
       },
       "SwaggerAuth.Entity/1.0.0": {
         "dependencies": {
+          "Auth0.ManagementApi": "7.0.5",
           "Microsoft.EntityFrameworkCore": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
+          "RestSharp": "106.10.1",
           "Swashbuckle": "5.6.0"
         },
         "runtime": {
@@ -1402,6 +1434,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Auth0.Core/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n91vMqRZvipQBfJGh7kaQfiBfGebx2TZLjrNEFrM5aqRuIRY+K3gYa7kjFl5hycGyclxxDdHtzLjWVYDzB35Hw==",
+      "path": "auth0.core/7.0.5",
+      "hashPath": "auth0.core.7.0.5.nupkg.sha512"
+    },
+    "Auth0.ManagementApi/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oc8XcDVRf09hmj0C3LPSoiMj/TqUmnlB5LfXNluFox2t8TeFXHEaZvFIY4SdtJ8PZ7XJw8E1OkOfyRhWz+O8Xg==",
+      "path": "auth0.managementapi/7.0.5",
+      "hashPath": "auth0.managementapi.7.0.5.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/4.0.20710": {
       "type": "package",
@@ -1655,12 +1701,19 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/7.0.1": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
-      "path": "newtonsoft.json/7.0.1",
-      "hashPath": "newtonsoft.json.7.0.1.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "RestSharp/106.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "path": "restsharp/106.10.1",
+      "hashPath": "restsharp.106.10.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

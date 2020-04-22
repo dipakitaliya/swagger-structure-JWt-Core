@@ -11,3 +11,16 @@ D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Re
 D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.csproj.CopyComplete
 D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.dll
 D:\IBL\SwaggerAuth\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.deps.json
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Repository.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Contracts.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Contracts.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.csprojAssemblyReference.cache
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.AssemblyInfoInputs.cache
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.AssemblyInfo.cs
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.csproj.CopyComplete
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Repository\obj\Debug\netcoreapp3.0\SwaggerAuth.Repository.pdb

@@ -2,6 +2,30 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "Auth0.Core/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {}
+        }
+      },
+      "Auth0.ManagementApi/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Auth0.Core": "7.0.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/4.0.20710": {
         "type": "package",
         "dependencies": {
@@ -459,13 +483,22 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -2075,9 +2108,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "Auth0.ManagementApi": "7.0.5",
           "Microsoft.EntityFrameworkCore": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
+          "RestSharp": "106.10.1",
           "Swashbuckle": "5.6.0"
         },
         "compile": {
@@ -2090,6 +2125,38 @@
     }
   },
   "libraries": {
+    "Auth0.Core/7.0.5": {
+      "sha512": "n91vMqRZvipQBfJGh7kaQfiBfGebx2TZLjrNEFrM5aqRuIRY+K3gYa7kjFl5hycGyclxxDdHtzLjWVYDzB35Hw==",
+      "type": "package",
+      "path": "auth0.core/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.core.7.0.5.nupkg.sha512",
+        "auth0.core.nuspec",
+        "lib/net452/Auth0.Core.dll",
+        "lib/net452/Auth0.Core.xml",
+        "lib/netstandard2.0/Auth0.Core.dll",
+        "lib/netstandard2.0/Auth0.Core.xml"
+      ]
+    },
+    "Auth0.ManagementApi/7.0.5": {
+      "sha512": "oc8XcDVRf09hmj0C3LPSoiMj/TqUmnlB5LfXNluFox2t8TeFXHEaZvFIY4SdtJ8PZ7XJw8E1OkOfyRhWz+O8Xg==",
+      "type": "package",
+      "path": "auth0.managementapi/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.managementapi.7.0.5.nupkg.sha512",
+        "auth0.managementapi.nuspec",
+        "lib/net452/Auth0.ManagementApi.dll",
+        "lib/net452/Auth0.ManagementApi.xml",
+        "lib/netstandard2.0/Auth0.ManagementApi.dll",
+        "lib/netstandard2.0/Auth0.ManagementApi.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/4.0.20710": {
       "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
       "type": "package",
@@ -2759,14 +2826,14 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/7.0.1": {
-      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/7.0.1",
-      "hasTools": true,
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2775,13 +2842,34 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "newtonsoft.json.7.0.1.nupkg.sha512",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
-        "tools/install.ps1"
+        "packageIcon.png"
+      ]
+    },
+    "RestSharp/106.10.1": {
+      "sha512": "MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "type": "package",
+      "path": "restsharp/106.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.10.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -7105,11 +7193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
+      "projectUniqueName": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
       "projectName": "SwaggerAuth.Contracts",
-      "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
+      "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\SwaggerAuth.Contracts.csproj",
       "packagesPath": "C:\\Users\\Borse Nitin\\.nuget\\packages\\",
-      "outputPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Contracts\\obj\\",
+      "outputPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7128,8 +7216,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
-              "projectPath": "D:\\IBL\\SwaggerAuth\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
+            "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj": {
+              "projectPath": "E:\\GitHubDemo\\Jwt_Swaggerapi_RepoPattern_dotnetCore\\swagger-structure-JWt-Core\\SwaggerAuth.Entity\\SwaggerAuth.Entity.csproj"
             }
           }
         }
@@ -7208,16 +7296,6 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 7.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Newtonsoft.Json",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
       ]

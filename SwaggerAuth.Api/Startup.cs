@@ -36,20 +36,37 @@ namespace SwaggerAuth.Api
              options.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
 
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(opetion =>
-                {
-                    opetion.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = Configuration["Jwt:Issuer"],
-                        ValidAudience = Configuration["Jwt:Issuer"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-                    };
-                });
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(opetion =>
+            //    {
+            //        opetion.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            ValidateIssuer = true,
+            //            ValidateAudience = true,
+            //            ValidateLifetime = true,
+            //            ValidateIssuerSigningKey = true,
+            //            ValidIssuer = Configuration["Jwt:Issuer"],
+            //            ValidAudience = Configuration["Jwt:Issuer"],
+            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+            //        };
+            //    });
+            // this is used for local 
+            string domain = $"https://{Configuration["Auth0:domain"]}/";
+            string audience = $"https://{Configuration["Auth0:domain"]}/api/v2/";
+            //// ===== Add Jwt Authentication ========
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.Authority = domain;
+                options.Audience = audience;
+                options.RequireHttpsMetadata = false;
+            });
+
+
+
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 
             services.AddMvc();

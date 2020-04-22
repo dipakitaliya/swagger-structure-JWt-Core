@@ -8,3 +8,13 @@ D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity
 D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.AssemblyInfo.cs
 D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
 D:\IBL\SwaggerAuth\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.deps.json
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.runtimeconfig.json
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.runtimeconfig.dev.json
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\bin\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.csprojAssemblyReference.cache
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.AssemblyInfoInputs.cache
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.AssemblyInfo.cs
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.dll
+E:\GitHubDemo\Jwt_Swaggerapi_RepoPattern_dotnetCore\swagger-structure-JWt-Core\SwaggerAuth.Entity\obj\Debug\netcoreapp3.0\SwaggerAuth.Entity.pdb
