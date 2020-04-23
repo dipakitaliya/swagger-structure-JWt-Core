@@ -34,37 +34,31 @@ namespace SwaggerAuth.Api
         {
             services.AddDbContext<RepoContext>(options =>
              options.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
-
-
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //    .AddJwtBearer(opetion =>
-            //    {
-            //        opetion.TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidateIssuer = true,
-            //            ValidateAudience = true,
-            //            ValidateLifetime = true,
-            //            ValidateIssuerSigningKey = true,
-            //            ValidIssuer = Configuration["Jwt:Issuer"],
-            //            ValidAudience = Configuration["Jwt:Issuer"],
-            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-            //        };
-            //    });
-            // this is used for local 
-            string domain = $"https://{Configuration["Auth0:domain"]}/";
-            string audience = $"https://{Configuration["Auth0:domain"]}/api/v2/";
+            //// this is used for local 
+            string domain = $"https://{Configuration["Auth0:Domain"]}/";
+            string audience = $"https://{Configuration["Auth0:Domain"]}/api/v2/";
             //// ===== Add Jwt Authentication ========
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
             }).AddJwtBearer(options =>
             {
                 options.Authority = domain;
                 options.Audience = audience;
                 options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                };
             });
-
 
 
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -73,7 +67,7 @@ namespace SwaggerAuth.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc(name: "v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc(name: "v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My0 Auth0 And Jwt Token API", Version = "v2" });
             });
         }
 
@@ -87,7 +81,7 @@ namespace SwaggerAuth.Api
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("../swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("../swagger/v1/swagger.json", "My API V2");
             });
 
             app.UseHttpsRedirection();

@@ -28,3 +28,13 @@
 - a user list method has been create to retrieve the user list by passing this token into the authentication HTTP header.
 - Token set to Postman. And get the user list.
 - Create a user update and delete method and call it in IwrapperRepository.
+
+
+
+========= Auth0 signup error =====================
+- I faced this error in Auth0 Signup. " Auth0.Core.Exceptions.ErrorApiException: {"statusCode":401,"error":"Unauthorized","message":"Invalid token","attributes":{"error":"Invalid token"}} "
+- I solved this error. This error occurs when creating an api in Auth0.
+- When we use the default API "Auth0 Management API". When we go to "Test" TB within the API, the application itself becomes a new application called "Oth0 Management API (Test Application)".
+My mistake was that I was using the "Auth0 Management API (Test Application)" API. Because of that I had to face this mistake.
+Go to "Auth0 Management API" to fix this error. Then go to "API Explorer". There you will find "Token Expiration (seconds) *
+Below that will be a "Save" button. Click it. Clicking on it will create a new application called "API Explorer App". Use it in the project. Your error will be corrected.
